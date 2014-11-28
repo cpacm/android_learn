@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- animation-list是一组图片的数组，用来逐帧显示 -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" ><!-- oneshot表示是否只循环一遍 -->
+    <item android:drawable="@drawable/p0" android:duration="500" />
+    <item android:drawable="@drawable/p1" android:duration="500" />
+    <item android:drawable="@drawable/p2" android:duration="500" />
+    <item android:drawable="@drawable/p3" android:duration="500" />
+    <item android:drawable="@drawable/p4" android:duration="500" />
+    <item android:drawable="@drawable/p5" android:duration="500" />
+</animation-list>

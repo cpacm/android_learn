@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestRep</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="alpha">AlphaAnimation</string>
+    <string name="scale">ScaleAnimation</string>
+    <string name="translate">TranslateAnimation</string>
+    <string name="rotate">RotateAnimation</string>
+    <string name="all">AnimationSet</string>
+    <string name="back">back</string>
+    <string name="title_activity_main">mainActivity</string>
+    <string name="title_activity_frame_animation">FrameAnimationActivity</string>
+    <string name="title_activity_object_animator">ObjectAnimator</string>
+
+</resources>
