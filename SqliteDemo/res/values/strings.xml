@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">notebook</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="edit">编辑</string>
+    <string name="picture">图片</string>
+    <color name="grey">#CCCCCC</color>
+
+</resources>
