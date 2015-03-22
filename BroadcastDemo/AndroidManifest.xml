@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.broadcastdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.broadcastdemo.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".ColdReceiver"><!-- 你的Receiver名称 -->  
+            <intent-filter>  
+                <action android:name="android.intent.action.COLD_BROADCAST"/>  <!-- 你广播要接受的intent名称 -->
+                <category android:name="android.intent.category.DEFAULT" />  
+            </intent-filter>  
+        </receiver>  
+        <receiver android:name=".NormalReceiver1">  
+            <intent-filter>  
+                <action android:name="android.intent.action.NORMAL_BROADCAST"/>  
+                <category android:name="android.intent.category.DEFAULT" />  
+            </intent-filter>  
+        </receiver> 
+        <receiver android:name=".NormalReceiver2">  
+            <intent-filter>  
+                <action android:name="android.intent.action.NORMAL_BROADCAST"/>  
+                <category android:name="android.intent.category.DEFAULT" />  
+            </intent-filter>  
+        </receiver> 
+        <receiver android:name=".NormalReceiver3">  
+            <intent-filter>  
+                <action android:name="android.intent.action.NORMAL_BROADCAST"/>  
+                <category android:name="android.intent.category.DEFAULT" />  
+            </intent-filter>  
+        </receiver> 
+        <receiver android:name=".SortReceiver1">  
+            <intent-filter android:priority="1000">  
+                <action android:name="android.intent.action.SORT_BROADCAST"/>  
+                <category android:name="android.intent.category.DEFAULT" />  
+            </intent-filter>  
+        </receiver> 
+        <receiver android:name=".SortReceiver2">  
+            <intent-filter android:priority="999">  
+                <action android:name="android.intent.action.SORT_BROADCAST"/>  
+                <category android:name="android.intent.category.DEFAULT" />  
+            </intent-filter>  
+        </receiver> 
+        <receiver android:name=".SortReceiver3">  
+            <intent-filter android:priority="998">  
+                <action android:name="android.intent.action.SORT_BROADCAST"/>  
+                <category android:name="android.intent.category.DEFAULT" />  
+            </intent-filter>  
+        </receiver> 
+        <service android:name=".BroadcastService"><!-- 你自定义的service文件   （在<application></application>里面加）-->
+        <intent-filter>
+                <action android:name="android.intent.action.BroadcastService" /><!-- 用intent启动时的快捷名（也可以用常规的方式启动） -->
+                <category android:name="android.intent.category.default" />
+        </intent-filter>
+        </service>  
+    </application>
+
+    <permission android:protectionLevel="normal"  
+            android:name="scott.permission.SORT_BROADCAST_PERMISSION" />
+    <uses-permission android:name="scott.permission.SORT_BROADCAST_PERMISSION" />  
+</manifest>
