@@ -58,6 +58,7 @@ Android Developer 文章：
 
 (targetSdkVersion>=23)
 Dangous Permissions
+
 | Permission Group | Permissions |
 | ------ | ------ |
 | CALENDAR | READ_CALENDAR </br> WRITE_CALENDAR |
@@ -141,5 +142,5 @@ if (ContextCompat.checkSelfPermission(context, Manifest.permission.READ_CONTACTS
 3、设备的策略禁止当前应用获取这个权限的授权：`shouldShowRequestPermissionRationale()`返回false 
 
 
-博客地址：[cpacm](www.cpacm.net)
+博客地址：[cpacm](http://www.cpacm.net/2016/11/02/PermissionBuilder/)
 
