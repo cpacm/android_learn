@@ -3,6 +3,7 @@
 欢迎访问[cpacm博客](http://www.cpacm.net)
 
 ## Permission Builder
+`2017.03.01` 添加 MVP框架 demo
 `2016.11.02` 添加 Android 6.0 权限管理辅助库
 
 ## 以前添加的demo
